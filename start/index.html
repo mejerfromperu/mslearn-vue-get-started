@@ -5,18 +5,26 @@
     <meta charset="UTF-8" />
     <title>Relecloud Galaxy Tours</title>
     <link rel="stylesheet" href="./assets/styles.css" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- TODO: Import Vue.js core library -->
+    
+    
 
 </head>
 
 <body>
     <div class="nav-bar"></div>
     <h1>Relecloud Galaxy Tours</h1>
-
     <!-- TODO: Add information display -->
-
+    <div id="app">
+        <h2>{{ productName }}</h2>
+        <div>{{ productDescription }}</div>
+        <img v-bind:src="imageSouce" :alt="productImageDescription" :style="productImageStyle" />
+    </div>
     
-    <!-- TODO: Import Vue app -->
+    <!-- TODO: Import Vue app -->  
+    <script src="./indexScript.js"></script> 
+    <script>app.mount("#app")</script>
 
 </body>
 
